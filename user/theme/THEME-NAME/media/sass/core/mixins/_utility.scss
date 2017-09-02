@@ -125,3 +125,28 @@ $align: left, right, center;
     $i: $i + 1;
   }
 }
+
+//flex関係
+@mixin f-direction($value: row) {
+  flex-direction: $value;
+}
+
+@mixin f-wrap($value: wrap) {
+  flex-wrap: $value;
+}
+
+@mixin j-content($value: flex-start) {
+  justify-content: $value;
+}
+
+@mixin a-items($value: stretch) {
+  align-items: $value;
+}
+
+@mixin flex($f-direction: row, $f-wrap: wrap, $j-content: flex-start, $a-items: stretch) {
+  @include f-direction($f-direction);
+  @include f-wrap($f-wrap);
+  @include j-content($j-content);
+  @include a-items($a-items);
+  display: flex;
+}

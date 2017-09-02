@@ -11,6 +11,7 @@
 
 ::before,
 ::after {
+  display: inline-block;
   text-decoration: inherit;
   vertical-align: inherit;
 }
@@ -89,6 +90,7 @@ sub {
 img {
   border: 0;
   vertical-align: bottom;
+  max-width: 100%;
 }
 
 svg:not(:root) {
@@ -98,6 +100,10 @@ svg:not(:root) {
 hr {
   box-sizing: content-box;
   height: 0;
+}
+
+*:not(input):not(select):not(button):not(textarea):not(label):focus {
+  outline: none;
 }
 
 select {
@@ -143,7 +149,7 @@ input[type="submit"] {
   border:none;
 }
 
-button {  
+button {
   overflow: visible;
   background-color: transparent;
   border-radius:0;
@@ -156,7 +162,7 @@ select {
 }
 
 button,
-html input[type="button"],
+input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: none;
@@ -164,7 +170,7 @@ input[type="submit"] {
 }
 
 button[disabled],
-html input[disabled] {
+input[disabled] {
   cursor: default;
 }
 
@@ -223,6 +229,10 @@ textarea:focus {
 textarea {
   overflow: auto;
   resize: vertical;
+}
+
+label {
+  display: inline-block;
 }
 
 table {
