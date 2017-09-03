@@ -14,4 +14,6 @@ find $BASEDIR \( -name "*.html" -or -name "*.css" -or -name "*.scss" \) -exec se
 mv $BASEDIR/user/media/* "$BASEDIR/user/media/$theme/"
 mv $BASEDIR/user/theme/* "$BASEDIR/user/theme/$theme/"
 
+find $BASEDIR -name '*.keep' | xargs rm
+
 read -p "完了しました。スクリプトを終了するには[RETURN]キーを押して下さい。"
