@@ -19,13 +19,17 @@ http://developers.linecorp.com/blog/?p=1027
 
 
 ## 対応ブラウザ
+基本的にはブラウザの最新バージョンをサポート
+
 ### PC
 IE11、Edge<br/>
-Chrome、FireFox、Safariの各最新バージョン<br>
+Chrome、FireFox、Safari
 
 ### SP
-Safariの最新バージョン<br/>
-Android4.4以降の標準ブラウザ
+- iOS（コーディング時点での最新バージョン）<br/>
+Safari
+- Android(4.4以上)<br/>
+Chrome
 
 
 ## ファイル構造
